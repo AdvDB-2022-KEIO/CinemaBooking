@@ -626,7 +626,7 @@ CREATE TABLE `sys_user`  (
 -- ----------------------------
 -- Records of sys_user
 -- ----------------------------
-INSERT INTO `sys_user` VALUES (1, 'admin', '2f6b5c3044b271f5c07545aa862cf35c', '0v#C4w&i', '17777744455@qq.com', '13111212312', 1, '[\"/images/user/2021/05/19/2b1e80fb2b4746aa8fd21feab6088679.png\"]', 1, '1999-10-15', '爱拼才会赢123', 0);
+INSERT INTO `sys_user` VALUES (1, 'admin', 'e10adc3949ba59abbe56e057f20f883e', '0v#C4w&i', '17777744455@qq.com', '13111212312', 1, '[\"/images/user/2021/05/19/2b1e80fb2b4746aa8fd21feab6088679.png\"]', 1, '1999-10-15', '爱拼才会赢123', 0);
 INSERT INTO `sys_user` VALUES (2, '李四', '51a97989bc84e6d30c323d5b7f2d6994', 'wUA)g4Nk', '123456@qq.com', '13512345678', 1, '[\"/images/user/2020/12/15/82760d557d8c4620b453a7d7c2cd6340.jpg\"]', 2, '1999-10-15', '爱拼才会赢', 0);
 INSERT INTO `sys_user` VALUES (3, '张三', '562779e437586caeb6b0ccda5dd1b881', 'JkVgQzC@', '456@qq.com', '13512345678', 0, '[\"/images/user/2020/12/15/5765ed23e48a4626b4c8dc2c5d8ff91a.jpg\"]', 2, '1999-10-15', '爱拼才会赢', 0);
 INSERT INTO `sys_user` VALUES (4, '赵六', 'c0e89e9d1566fa2995f6780c54c4dd72', 'rvYUBSMb', '1456@qq.com', '13512345678', 0, '[\"/images/user/2020/12/15/ba755080ab35404abd8284b6842ca77c.jpg\"]', 2, '1999-10-15', '爱拼才会赢', 0);
