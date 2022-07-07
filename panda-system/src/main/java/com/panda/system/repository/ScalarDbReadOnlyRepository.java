@@ -1,4 +1,4 @@
-package com.panda.system.domin.repository;
+package com.panda.system.repository;
 
 import com.panda.system.exception.ObjectAlreadyExistingException;
 import com.panda.system.exception.ObjectNotFoundException;

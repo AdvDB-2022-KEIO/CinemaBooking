@@ -1,11 +1,10 @@
-package com.panda.system.domin.repository;
+package com.panda.system.repository;
 
 
 import com.panda.system.domin.SysUser;
 import com.panda.system.domin.vo.SysUserVo;
 import com.panda.system.exception.RepositoryConflictException;
 import com.panda.system.exception.RepositoryCrudException;
-import com.panda.system.util.ScalarUtil;
 import com.scalar.db.api.Delete;
 import com.scalar.db.api.DistributedTransaction;
 import com.scalar.db.api.Get;
