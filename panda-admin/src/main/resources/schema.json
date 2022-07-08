@@ -1,0 +1,14 @@
+{
+  "movie.sys_role3": {
+    "transaction": true,
+    "partition-key": [
+      "id"
+    ],
+    "clustering-key": [],
+    "columns": {
+      "id": "INT",
+      "role_name": "TEXT",
+      "role_desc": "TEXT"
+    }
+  }
+}

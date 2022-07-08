@@ -650,3 +650,23 @@ INSERT INTO `sys_user` VALUES (28, '123456', '2fe5433a5154351640768eb95f2e2306',
 INSERT INTO `sys_user` VALUES (29, '987456', '1d7f62c008716525c5e1c5189f0415d5', 'm)8XeNm7', NULL, '18322222222', 1, NULL, 3, NULL, NULL, 0);
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+create table movie_reservation
+(
+  id int auto_increment,
+  movie_id int null,
+  reserv_hashcode int null,
+  constraint movie_reservation_pk
+    primary key (id)
+);
+
+alter table movie_reservation modify reserv_hashcode varchar(255) null;
+
+
+INSERT INTO `movie_reservation` VALUES (3,1,"111432432");
+INSERT INTO `movie_reservation` VALUES (4,1,"dsakjndqwj");
+INSERT INTO `movie_reservation` VALUES (5,1,"dnjqwnnqwn");
+INSERT INTO `movie_reservation` VALUES (6,1,"ncjkankc");
+INSERT INTO `movie_reservation` VALUES (7,1,"cnuianciac");
+
