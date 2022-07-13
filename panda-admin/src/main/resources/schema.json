@@ -1,12 +1,12 @@
 {
-  "movie.sys_role3": {
+  "movie.sys_role4": {
     "transaction": true,
     "partition-key": [
-      "id"
+      "role_id"
     ],
-    "clustering-key": [],
+//    "clustering-key": [],
     "columns": {
-      "id": "INT",
+      "role_id": "INT",
       "role_name": "TEXT",
       "role_desc": "TEXT"
     }

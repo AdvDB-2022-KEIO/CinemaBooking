@@ -87,7 +87,7 @@ public class SysRoleServiceImpl implements SysRoleService {
     @Override
     public int addRole(SysRole sysRole) {
 //        return sysRoleMapper.addRole(sysRole);
-        while (true) {
+//        while (true) {
 //            if (retryCount > 0) {
 //                if (retryCount == 3) {
 //                    throw new ServiceException("An error occurred when adding a user");
@@ -107,10 +107,10 @@ public class SysRoleServiceImpl implements SysRoleService {
             }
 
             try {
-                String userId = UUID.randomUUID().toString();
-                roleRepository.createRole(tx, sysRole,userId);
+                Integer userId = 33;
+                roleRepository.createRole(tx, sysRole,"33");
                 tx.commit();
-                return 0;
+                return userId;
             } catch (CommitConflictException | RepositoryConflictException e) {
                 try {
                     tx.abort();
@@ -126,7 +126,8 @@ public class SysRoleServiceImpl implements SysRoleService {
                 }
                 throw new ServiceException("An error occurred when adding a user", (Throwable) e);
             }
-        }
+//        }
+        return  0;
     }
 
     @Override

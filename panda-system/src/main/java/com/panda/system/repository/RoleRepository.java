@@ -25,18 +25,20 @@ import java.util.Optional;
 @Repository
 public class RoleRepository extends ScalarDbReadOnlyRepository<SysRole> {
   public static final String NAMESPACE = "movie";
-  public static final String TABLE_NAME = "sys_role3";
+  public static final String TABLE_NAME = "sys_role4";
   public static final String COMMON_KEY = "common_key";
 
 
   public String createRole(DistributedTransaction tx, SysRole roleDto,String userId) {
     try {
-      Key pk = createPk(userId);
-      getAndThrowsIfAlreadyExist(tx, createGet(pk));
-      Put put =null;
-          new Put(pk)
+//      Key pk = createPk(userId);
+//      getAndThrowsIfAlreadyExist(tx, createGet(pk));
+        System.out.println("############################################"+roleDto.toString());
+        Key pk = new Key("role_id", 333);
+      Put put = new Put(pk)
               .forNamespace(NAMESPACE)
               .forTable(TABLE_NAME)
+//                  .withValue("role_id",Integer.parseInt(userId))
               .withValue(SysRole.ROLE_NAME,roleDto.roleName)
               .withValue(SysRole.ROLE_DESC,roleDto.roleDesc);
       tx.put(put);
